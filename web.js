@@ -1,4 +1,6 @@
 var express = require('express');
+var app = express.createServer(express.logger());
+
 //var fs = require('fs');
 
 //var homepage = fs.readFileSync('index.html');
@@ -7,6 +9,9 @@ var express = require('express');
 //var prova = 'Hello you stupid world';
 
 App.get('/', function(request, response) {
+
+ //var homepage = fs.readFileSync('index.html');
+ //var buf = new Buffer(homepage);
   response.send('Hello stupid world');
 });
 
