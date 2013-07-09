@@ -4,9 +4,10 @@ var fs = require('fs');
 var homepage = fs.readFileSync('index.html');
 var buf = new Buffer(homepage);
 var file_text = buf.toString('utf8');
+var prova = 'Hello you stupid world';
 
 App.get('/', function(request, response) {
-  response.send(homepage);
+  response.send(prova);
 });
 
 var port = process.env.PORT || 5000;
