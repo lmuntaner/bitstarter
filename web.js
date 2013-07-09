@@ -1,18 +1,9 @@
 var express = require('express');
+
 var app = express.createServer(express.logger());
 
-//var fs = require('fs');
-
-//var homepage = fs.readFileSync('index.html');
-//var buf = new Buffer(homepage);
-//var file_text = buf.toString('utf8');
-//var prova = 'Hello you stupid world';
-
-App.get('/', function(request, response) {
-
- //var homepage = fs.readFileSync('index.html');
- //var buf = new Buffer(homepage);
-  response.send('Hello stupid world');
+app.get('/', function(request, response) {
+  response.send('Hello World!');
 });
 
 var port = process.env.PORT || 5000;
