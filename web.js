@@ -1,10 +1,10 @@
 var express = require('express');
-var fs = require('fs');
+//var fs = require('fs');
 
 //var homepage = fs.readFileSync('index.html');
 //var buf = new Buffer(homepage);
 //var file_text = buf.toString('utf8');
-var prova = 'Hello you stupid world';
+//var prova = 'Hello you stupid world';
 
 App.get('/', function(request, response) {
   response.send('Hello stupid world');
